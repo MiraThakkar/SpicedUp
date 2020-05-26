@@ -1,18 +1,29 @@
 import React from 'react';
 import './App.css';
-import Navbar from "../src/components/Navbar"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
+// import Recipes from "./pages/Recipes";
+import AddRecipe from "./pages/AddRecipe";
+import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
-    <div className="App">
-
-      <Navbar />
-      {/* <header className="App-header">
-        <p>
-          Hello, world!
-        </p>
-      </header> */}
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route exact path={["/", "/recipes"]}>
+            {/* <Recipes /> */}
+          </Route>
+          <Route exact path="/add">
+            <AddRecipe />
+          </Route>
+          <Route>
+            <NoMatch />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

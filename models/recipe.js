@@ -11,10 +11,15 @@ const recipeSchema = new Schema({
     ingredients: {
         type: String,
     },
-
-    steps: {
+    directions: {
         type:String
     },
+
+    author: {
+        type: String,
+        required: "author is required"
+    },
+
     date: { type: Date, default: Date.now }
 
 });
