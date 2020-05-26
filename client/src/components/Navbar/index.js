@@ -1,6 +1,6 @@
 import React from 'react';
 import icon from "./logo2.png"
-import './style.css';
+import './style.scss';
 
 function Navbar () {
   return (

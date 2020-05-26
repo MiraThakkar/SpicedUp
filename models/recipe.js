@@ -8,13 +8,18 @@ const recipeSchema = new Schema({
         trim: true,
         required: "recipe name is required"
     },
+    time: {
+        type: Number
+    },
+    serving: {
+        type: Number
+    },
     ingredients: {
         type: String,
     },
     directions: {
         type:String
     },
-
     author: {
         type: String,
         required: "author is required"
