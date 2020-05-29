@@ -21,8 +21,11 @@ function Add() {
             </Col> 
         </Row>
         <Row>
-            <Col size= "md-8">
-            <form className = "ml-5">
+            <Col size= "md-8" className = "mt-5">
+                <div className = "col-md-2 ">
+                    <hr />
+                </div>
+            <form className= "recipe-form">
               <Input
                 // onChange={handleInputChange}
                 name="title"

@@ -4,10 +4,24 @@
 }
 
 body {
-  background-image: url("./light-veneer.png");
+  background: url("./light-veneer.png");
   
 }
 
+.col-md-8{
+  margin:auto !important;
+  margin-top: 50px;
+}
+.col-md-2{
+  margin:auto !important;
+  margin-top: 50px 50px;
+}
+hr {
+  background-color: rgb(231, 121, 139);
+  border-radius: 50%;
+  height: 2px;
+  margin-bottom: 50px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
