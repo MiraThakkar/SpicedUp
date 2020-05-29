@@ -11,7 +11,7 @@ function Card() {
             </div>
             <div className="text">
                 <h1 className="food">
-                    Chinese Noodles
+                    Vegetable Haka Noodles
                 </h1>
                 <i className="fa fa-clock-o"> 15 Mins</i>
                 <i className="fa fa-users"> Serves 2</i>

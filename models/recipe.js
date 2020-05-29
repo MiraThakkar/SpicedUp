@@ -14,6 +14,7 @@ const recipeSchema = new Schema({
     serving: {
         type: Number
     },
+
     ingredients: {
         type: String,
     },
