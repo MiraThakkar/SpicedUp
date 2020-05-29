@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  
+}
+
+body {
+  background-image: url("./light-veneer.png");
+  
 }
 
 .App-logo {
