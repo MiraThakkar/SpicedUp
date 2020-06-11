@@ -92,8 +92,8 @@ body {
    }
    a.btn {
       display: block;
-      background: $button;
-      color: $white;
+      background-color: $button;
+       color: $white; 
       position: relative;
       text-transform: uppercase;
       letter-spacing: 0.1em;

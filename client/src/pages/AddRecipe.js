@@ -8,6 +8,13 @@ import { Col, Row, Container } from "../components/Grid";
 function Add() {
     const [recipeObject, setRecipeObject] = useState({})
 
+
+
+    function handleInputChange(event) {
+        const {name, value} = event.target;
+        setRecipeObject({...recipeObject, [name]: value})
+    };
+    console.log(recipeObject);
     return (
         <Container fluid>
 
@@ -27,39 +34,45 @@ function Add() {
                 </div>
             <form className= "recipe-form">
               <Input
-                // onChange={handleInputChange}
+                onChange={handleInputChange}
                 name="title"
                 placeholder="Title (required)"
               />
               <Input
-                // onChange={handleInputChange}
+                onChange={handleInputChange}
                 name="author"
                 placeholder="Author (required)"
               />
                <Input
-                // onChange={handleInputChange}
+                onChange={handleInputChange}
                 name="time"
                 placeholder="Cooking time"
               />
                <Input
-                // onChange={handleInputChange}
+                onChange={handleInputChange}
                 name="serving"
                 placeholder="Serving"
               />
                <Input
-                // onChange={handleInputChange}
+                onChange={handleInputChange}
                 name="ingredients"
                 placeholder="Ingredients (required)"
               />
-
-              
               <TextArea
-                // onChange={handleInputChange}
+                onChange={handleInputChange}
                 name="direction"
                 placeholder= "Direction (required)"
               />
+              <p> Upload recipe image</p>
+              <Input 
+              type = "file"
+              name = "image"
+              accept = "image/*"
+              multiple= "false"
+              />        
+
               <FormBtn
-                // disabled={!(formObject.author && formObject.title)}
+                disabled= "false"
                 // onClick={handleFormSubmit}
               >
                 Save Recipe
